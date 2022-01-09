@@ -7,8 +7,20 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>332</height>
+    <height>400</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>400</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -39,14 +51,17 @@
     </rect>
    </property>
    <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
     <string>Username</string>
    </property>
   </widget>
   <widget class="QLabel" name="lb_title">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>20</y>
+     <x>20</x>
+     <y>10</y>
      <width>211</width>
      <height>31</height>
     </rect>
@@ -68,10 +83,13 @@
     </rect>
    </property>
    <property name="text">
-    <string>Password</string>
+    <string/>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::PasswordEchoOnEdit</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Password</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_create">
@@ -103,7 +121,7 @@
     <string>Username:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="in_password2">
+  <widget class="QLineEdit" name="in_retype">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -113,10 +131,13 @@
     </rect>
    </property>
    <property name="text">
-    <string>Re-type password</string>
+    <string/>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::PasswordEchoOnEdit</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Re-type password</string>
    </property>
   </widget>
   <widget class="QLabel" name="lb_password2">
@@ -133,6 +154,38 @@
    </property>
    <property name="text">
     <string>Re-type:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_close">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>260</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close Window</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_info">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>40</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>

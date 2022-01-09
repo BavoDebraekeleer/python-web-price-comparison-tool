@@ -6,30 +6,824 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>881</width>
-    <height>662</height>
+    <width>1000</width>
+    <height>900</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>900</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <property name="iconSize">
+   <size>
+    <width>32</width>
+    <height>32</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lb_title_addProduct">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>381</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Product</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_title_addShop">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>381</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Shop URL</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="in_productBrand">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>40</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_brand">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Brand name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_category">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>140</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Category:</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>961</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="in_category">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>140</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="in_add_productSelect">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>230</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="currentText">
+     <string extracomment="Select product"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_product">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>230</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Product:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_url">
+    <property name="geometry">
+     <rect>
+      <x>38</x>
+      <y>270</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shop URL:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="in_productShopUrl">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>270</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>961</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_title_displayInfo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>381</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display information</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="in_display_productSelect">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>380</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="currentText">
+     <string extracomment="Select product"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_product">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>380</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Product:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_addProduct">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>140</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Product</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_addProductShop">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>270</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Shop URL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_addProduct_message">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>140</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_addShop_message">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>270</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="in_productName">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>80</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_name">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Product name:</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>680</y>
+      <width>961</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_removeTitle">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>710</y>
+      <width>381</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Remove Product and/or Shop URL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_remove_message">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>820</y>
+      <width>941</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_removeProduct">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>740</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Product:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_removeProduct">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>740</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Remove Product</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="in_removeProduct">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>740</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_removeShop">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>780</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shop:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_removeProductShop">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>780</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Remove Shop for this Product</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="in_removeShop">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>780</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_brand_title">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>430</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Brand name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_name_title">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>460</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Product name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_ean_title">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>490</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EAN:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_description_title">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>520</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Description:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_priceBest_title">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>400</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Price:          €</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_shop">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>600</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shop:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="in_display_shop">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>600</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_shop_price_title">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>600</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shop price:  €</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_brand">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>430</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Brand</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_ean">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>490</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0123456789012</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_name">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>460</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_shop_price">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>600</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0,00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_priceBest">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>400</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0,00</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txt_display_description">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>520</y>
+      <width>271</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_priceBest_shop_title">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>430</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shop name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_priceBest_shop">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>430</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shop name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_priceBest_url_title">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>460</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shop URL:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_display_shop_url_title">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>630</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shop URL:</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txt_display_priceBest_url">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>460</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txt_display_shop_url">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>630</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="image">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>430</y>
+      <width>221</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="undoRedoEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>370</y>
+      <width>311</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Best price</string>
+    </property>
+   </widget>
+   <zorder>groupBox</zorder>
+   <zorder>lb_title_addProduct</zorder>
+   <zorder>lb_title_addShop</zorder>
+   <zorder>in_productBrand</zorder>
+   <zorder>lb_brand</zorder>
+   <zorder>lb_category</zorder>
+   <zorder>line</zorder>
+   <zorder>in_category</zorder>
+   <zorder>in_add_productSelect</zorder>
+   <zorder>lb_product</zorder>
+   <zorder>lb_url</zorder>
+   <zorder>in_productShopUrl</zorder>
+   <zorder>line_2</zorder>
+   <zorder>lb_title_displayInfo</zorder>
+   <zorder>in_display_productSelect</zorder>
+   <zorder>lb_display_product</zorder>
+   <zorder>btn_addProduct</zorder>
+   <zorder>btn_addProductShop</zorder>
+   <zorder>lb_addProduct_message</zorder>
+   <zorder>lb_addShop_message</zorder>
+   <zorder>in_productName</zorder>
+   <zorder>lb_name</zorder>
+   <zorder>line_3</zorder>
+   <zorder>lb_removeTitle</zorder>
+   <zorder>lb_remove_message</zorder>
+   <zorder>lb_removeProduct</zorder>
+   <zorder>btn_removeProduct</zorder>
+   <zorder>in_removeProduct</zorder>
+   <zorder>lb_removeShop</zorder>
+   <zorder>btn_removeProductShop</zorder>
+   <zorder>in_removeShop</zorder>
+   <zorder>lb_display_brand_title</zorder>
+   <zorder>lb_display_name_title</zorder>
+   <zorder>lb_display_ean_title</zorder>
+   <zorder>lb_display_description_title</zorder>
+   <zorder>lb_display_priceBest_title</zorder>
+   <zorder>lb_display_shop</zorder>
+   <zorder>in_display_shop</zorder>
+   <zorder>lb_display_shop_price_title</zorder>
+   <zorder>lb_display_brand</zorder>
+   <zorder>lb_display_ean</zorder>
+   <zorder>lb_display_name</zorder>
+   <zorder>lb_display_shop_price</zorder>
+   <zorder>lb_display_priceBest</zorder>
+   <zorder>txt_display_description</zorder>
+   <zorder>lb_display_priceBest_shop_title</zorder>
+   <zorder>lb_display_priceBest_shop</zorder>
+   <zorder>lb_display_priceBest_url_title</zorder>
+   <zorder>lb_display_shop_url_title</zorder>
+   <zorder>txt_display_priceBest_url</zorder>
+   <zorder>txt_display_shop_url</zorder>
+   <zorder>image</zorder>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>881</width>
+     <width>1000</width>
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuAdd">
-    <property name="title">
-     <string>Add</string>
-    </property>
-    <addaction name="actionProduct"/>
-    <addaction name="actionURL"/>
-   </widget>
    <widget class="QMenu" name="menuLogin">
     <property name="title">
      <string>User</string>
@@ -38,7 +832,6 @@
     <addaction name="actionCreate"/>
    </widget>
    <addaction name="menuLogin"/>
-   <addaction name="menuAdd"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionProduct">
